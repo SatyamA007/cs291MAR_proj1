@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Installing and Testing SDKs</title>
-  
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
-    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
     
   
     <a-scene embedded arjs='sourceType: webcam;'>
       <a-assets>
-        <img id="my-image" src="images/ar.png" crossorigin="anonymous">
+        <img crossorigin="anonymous" id="my-image" src="https://github.com/SatyamA007/cs291MAR_proj1/blob/main/images/ar.png?raw=true">
       </a-assets>
       <a-entity
         rotation="-90 0 0"
         geometry="primitive: plane; width: 4; height: auto"
-        material="color: blue"
-        text="value: Alexender Statue\n Alexandria"></a-entity>
+        material="color: orange"
+        text="value: Pikachu, the master of lighting type!\n Gotta Catch Em' All!!"></a-entity>
         <a-image src="#my-image" rotation="-90 0 0"></a-image>
         <a-marker-camera preset='hiro'></a-marker-camera>
      </a-scene>
